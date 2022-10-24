@@ -8,22 +8,5 @@ module.exports = StyleSheet.create({
         backgroundColor: 'white',
         padding: 20,
         fontWeight: "bold"
-    },
-    authorization: {
-        view: {
-            flex: 1,
-            alignItems: 'center',
-            justifyContent: 'center',
-            padding: 20
-        },
-        header: {
-
-        },
-        textField: {
-
-        },
-        button: {
-
-        }
     }
 });

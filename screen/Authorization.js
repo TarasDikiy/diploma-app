@@ -1,14 +1,19 @@
 import { Text, TextInput,  TouchableOpacity,  View } from "react-native";
-import global from "../styles/global";
+import auth from "../styles/auth";
 
-export default function Authorization() {
+export default function Authorization({ navigation }) {
     return (
-        <View style={global.dummy}>
-            <Text>Authorization</Text>
-            <TextInput></TextInput>
-            <TouchableOpacity>
-                <Text>Go</Text>
+        <View style={auth.container}>
+            <View style={auth.authView}>
+            <Text style={auth.authHeader}>Authorization</Text>
+            <TextInput style={auth.authInput} placeholder="Email" />
+            <TouchableOpacity style={auth.authBtn}>
+                <Text style={auth.authBtn.text}>Authorize</Text>
             </TouchableOpacity>
+        </View>
+            <View>
+                <Text style={auth.footer.text} onPress={() => navigation.navigate('Registration')}>Create new account</Text>
+            </View>
         </View>
     );
 }

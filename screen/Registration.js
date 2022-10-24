@@ -5,7 +5,7 @@ export default function Splash() {
     return(
         <View style={global.dummy}>
             <StatusBar hidden/>
-            <Text>This is splash screen</Text>
+            <Text>This is Registration screen</Text>
         </View>
     );
 }
