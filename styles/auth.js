@@ -1,6 +1,6 @@
 const { StyleSheet } = require("react-native");
 
-const scale = 1;
+const scale = 1.3;
 
 module.exports = StyleSheet.create({
     container: {
